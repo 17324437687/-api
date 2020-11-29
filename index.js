@@ -23,10 +23,10 @@ let MAO = require("multer-aliyun-oss")
 let upload = multer({
     storage: MAO({
         config: {
-            region: "oss-cn-shenzhen",
-            accessKeyId: "LTAI4FzEnyUXpGJTR4QUxmZz",
-            accessKeySecret: "A9tb338trfSUQrBSHKKqwyNvRMy3PZ",
-            bucket: "node-api-app"
+            region: "",
+            accessKeyId: "",
+            accessKeySecret: "",
+            bucket: ""
         }
     })
 })

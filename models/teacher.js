@@ -3,6 +3,8 @@
 let mongoose = require("mongoose")
 
 let teacherSchema = mongoose.Schema({
+
+    ImageUrl: String,
     name: String, //讲师名称
     title: String, //头衔
     textarea: String, // 讲师资历
@@ -11,7 +13,7 @@ let teacherSchema = mongoose.Schema({
         type: Date,
         default: Date.now,
     },
-    num: Number, //排序
+    num: Number, //排序 
 })
 
 module.exports = mongoose.model("teacher", teacherSchema)

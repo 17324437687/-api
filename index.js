@@ -55,7 +55,7 @@ app.post('/api/upload', upload.single('file'), (req, res) => {
 
 // 路由挂载
 
-app.use('/', teacher)
+app.use('/api/teacher', teacher)
 
 
 mongodbSQL() // 链接数据库
